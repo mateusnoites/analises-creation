@@ -28,15 +28,57 @@ h3, h2 {
     padding: 20px 20px 30px 20px;
     border-radius: 10px;
     border: 1px solid rgb(231, 231, 231);
+    width: 500px;
 }
 
 .analises {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    margin-top: 50px;
 }
 
 .links {
     display: flex;
+    gap: 10px;
+}
+
+.botao {
+    padding: 8px 20px;
+    font-size: 10pt;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+}
+
+.analise {
+    background-color: #04B4E4;
+}
+
+.analise:hover {
+    background-color: #009bc5;
+}
+
+.relatorio {
+    background-color: #ff4141;
+}
+
+.relatorio:hover {
+    background-color: #da3636;
+}
+
+.submenu {
+    margin-top: 10px;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
+    display: none;
+}
+
+.submenu.ativo {
+    display: flex;
 }
